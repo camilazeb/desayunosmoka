@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sorprendé a quien mas queres con un desayuno. Hacemos envios en Santa Fe y alrededores">
+    <meta name="keywords" content="desayuno, picada, regalo, sorpresa, box, amigos, pareja, merienda. SANTA FE, A DOMICILIO, SALUDABLE">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="style/estilo.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <title>COMO HACER UN PEDIDO</title>
+    <style>
+/*   footer{
+    line-height: 40px;
+    background-color: rgb(99, 72, 50);
+    color: white;
+    padding: 20px 20px;
+    background-image: linear-gradient(to right, rgb(99, 72, 50),rgb(150, 122, 88));
+}
+header{
+    background-color: rgb(99, 72, 50);
+    float: left;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    
+}
+h1{
+    text-align: center;
+}*/
+            .color1{
+                background-color: rgb(236, 224, 209);
+                color: dimgrey;
+            }
+            .color2{
+                background-color: rgb(150, 122, 88);
+                color: white;
+            }
+            .color3{
+                background-color: lightblue;
+                color: dimgrey;
+            }
+            .color4{
+                background-color: rgb(99, 72, 50);
+                color: white
+            }
+    </style>
+</head>
+<body>
+<!-- <header>
+        <div class="logo">DESAYUNOS MOKA</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="./productos.html">PRODUCTOS</a>   
+                    <ul class="submenu">
+                        <li>Desayunos</li>
+                        <li>Picadas</li>
+                    </ul>
+                </li>
+                <li><a href="./galeria.html">GALERIA</a></li>
+                <li><a href="./horarios.html">HORARIOS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>-->
+    <nav class="navbar navbar-expand-sm color4">
+        <img src="../imagen/imagenes/LOGO.png" alt="Logo" style="width:10%">
+        <a class="navbar-brand color4" href="nosotros.html">NOSOTROS</a>
+        <a class="navbar-brand color4" href="./productos.html">PRODUCTOS</a>   
+        <a class="navbar-brand color4" href="./galeria.html">GALERIA</a>
+        <a class="navbar-brand color4" href="./horarios.html">COMO PEDIR</a>
+        <a class="navbar-brand color4" href="./contacto.html">CONTACTO</a>
+    </nav>
+    <div class="container-fluid color1">
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="row color1" >
+            <article class="color1 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="../imagen/opciones.png" alt="imagen" width="30%" class="mx-auto d-block">
+                <br> 
+                <h4 class="text-center">ELEGI LA OPCION</h4>
+                <p class="text-center">Podés elegir el tipo de desayuno que necesites en la sección desayunos. Acordate que podemos realizar ajustes de acuerdo a tus requerimientos.</p>
+            </article>
+            <article class="color1 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="../imagen/Draw free vector icons designed by srip.png" alt="imagen" width="30%" class="mx-auto d-block">
+                <br>
+                <h4 class="text-center">HACE TU PEDIDO</h4>
+                <p class="text-center">Carga tu pedido en el formulario, o bien comunicate con nosotros por Whatsapp o Instagram.
+                    Tendrás que indicarnos los datos de envio, asi como también la forma de pago.
+                </p>
+            </article>
+            <article class="color1 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="../imagen/Calendar free vector icons designed by Freepik.png" alt="imagen" width="30%" class="mx-auto d-block">
+                <br>
+                <h4 class="text-center">COMPLETA EL PAGO</h4>
+                <p class="text-center">Una vez recibido el pedido nos estaremos comunicando para concretar el pago y acordar horario de entrega.</p>
+            </article>
+        </section>
+        <br>
+        <br>
+        <br>
+    </div>
+    <section class="color2 container-fluid">
+        <br>
+        <h4 class="text-center">FORMULARIO DE PEDIDOS</h4>
+        <BR>
+        <div class="row">
+            <div class="color3 col-md-5 offset-md-1">
+                <br>
+                <form action="">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre de quien encarga:</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre de quien encarga" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Telefono de quien encarga:</label>
+                        <input type="number" id="nombre" class="form-control" placeholder="Telefono de quien encarga" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Fecha entrega:</label>
+                        <input type="date" id="nombre" class="form-control" placeholder="Fecha entrega" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Direccion:</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Calle, numero, piso, dpto. indicaciones" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Producto elegido:</label>
+                            <select name="nombre" class="custom-select" class="form-control">
+                                <option selected>Productos disponibles</option>
+                                <option value="clasico">Desayuno Clasico</option>
+                                <option value="salado">Desayuno Salado</option>
+                                <option value="dulce">Desayuno Dulce</option>
+                            </select>
+                    </div>
+            </form>
+            </div>
+            <div class="color3 col-xs-12 col-sm-6 col-md-5">
+                <br>
+                <form action="">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre de quien recibe:</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre de quien recibe" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Telefono de quien recibe:</label>
+                        <input type="number" id="nombre" class="form-control" placeholder="Telefono de quien recibe" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Horario de entrega:</label>
+                        <input type="time" id="nombre" class="form-control" placeholder="Horario" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Ciudad:</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Ciudad, provincia, CP" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Metodo de pago:</label>
+                        <br>
+                        <input type="checkbox" id="nombre" name="nombre">
+                        <label for="Nombre">Tranferencia</label>
+                        <input type="checkbox" id="nombre" name="nombre">
+                        <label for="Nombre">Mercado Pago</label>
+                        <input type="checkbox" id="nombre" name="nombre">
+                        <label for="Nombre">Efectivo</label>
+                    </div>
+                </form>
+            </div>
+            <div class="color3 col-md-10 offset-md-1">
+                <form action="">
+                    <div class="form-group">
+                        <label for="Nombre">Dedicatoria y/o comentarios adicionales:</label>
+                        
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Comentarios"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-block">Enviar</button>
+                    <br>
+                </form>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+        
+    <!--<H1>HORARIOS</H1>
+    
+    <a href="../index.html"><button>VOLVER AL INICIO</button></a>-->
+    <footer class="color4">
+        <p> Santa Fe, Argentina</p>
+        <p>E-mail: contacto@desayunosmoka.com</p>
+        <p>Tel +54 3424779322</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sorprendé a quien mas queres con un desayuno. Hacemos envios en Santa Fe y alrededores">
+    <meta name="keywords" content="desayuno, picada, regalo, sorpresa, box, amigos, pareja, merienda. SANTA FE, A DOMICILIO, SALUDABLE">
+    <meta name="country" content="Argentina">
+    <meta name="language" content="Spanish">
+    <link rel="stylesheet" href="style/estilo.css">
+        
+    
+    <title>DESAYUNOS Y PICADAS A DOMICILIO EN SANTA FE</title>
+    <style>
+        .formulario{
+            text-align: left;
+            margin-left: 40%;
+        }
+        .nosotros{
+            color: black;
+        font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: justify;
+        }
+    </style>
+</head>
+<body class="fondo">
+    <header>
+        <div class="logo">DESAYUNOS MOKA</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="pages/productos.html">PRODUCTOS</a>   
+                    <ul class="submenu">
+                        <li>Desayunos</li>
+                        <li>Picadas</li>
+                    </ul>
+                </li>
+                <li><a href="pages/galeria.html">GALERIA</a></li>
+                <li><a href="pages/horarios.html">COMO PEDIR</a></li>
+                <li><a href="pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    </main>
+    <br>
+    <br>
+    <H2 class="h2">CATEGORIAS DE PRODUCTOS</H2>
+    <section class="contenedor">
+        <div class="caja caja1">PICADAS</div>
+        <div class="caja caja4"></div>
+        <div class="caja caja2"></div>
+        <div class="caja caja5">DESAYUNOS</div>
+        <div class="caja caja3">REGALOS</div>
+        <div class="caja caja6"></div>
+    </section>
+    <h2 class="h2"> SOBRE NOSOTROS</h2>
+<br>
+        <P class="nosotros">
+            Somos una emprendimiento familiar dedicado al agasajo en todas las ocasiones especiales.
+            <br>
+            Nuestro objetivo es sorprender a quién recibe el agasajo y hacer que un regalo sea una sorpresa única y original. 
+    <br>Con estilo propio y con un abanico de alternativas creativas y únicas, cuidamos cada detalle para que tu regalo sea único, especial e inolvidable.
+    <br>En nuestro sitio web no solo encontraras desayunos, sino también una gran variedad de ideas que pueden acompañar ese obsequio tan especial, pudiendo hacer tu pedido online hasta 24hs antes del evento.
+    <br>
+    <br>
+    <br>
+    <h2 class="h2"> COMO PEDIR</h2>
+    <p class="nosotros">
+    Los pedidos se toman con  minimo 24 horas de anticipacion. Trabajamos de Lunes a Domingos de 8 a 19hs. 
+    <br>
+    El pago se realiza previo a la entrega del producto y se puede realizar por tranferencia bancaria, a través de Mercado Pago con débito y crédito, western union desde el exterior, o en efectivo acercando el dinero. 
+    Podés realizar el pedido completando el formulario o bien comunicandote con nosotros por whatsapp o redes sociales.
+    </p>
+    <br>
+    <H2 class="h2">HACE TU PEDIDO</H2>
+    <br>
+    <!-- FORMULARIOS -->
+    <form class="formulario" action="enviar.php" method="get">
+        <label for="usuario">Nombre</label>
+        <input type="text" name="usuario" placeholder="Nombre">
+        <br>
+        <br>
+        <label for="password">Apellido</label>
+        <input type="text" placeholder="Apellido">
+        <br>
+        <br>
+        <label for="">Email</label>
+        <input type="email" placeholder="Correo electronico">
+        <br>
+        <br>
+        Horario de envio<select name="Horario" id="">
+            <option value="Horario">09:00</option>
+            <option value="Horario">10:00</option>
+        </select>
+        <br>
+        <br>
+        Fecha elegida <input type="date" >
+        <br>
+        Producto elegido:
+        <br>
+        <label for="">Picada</label>
+        <input type="checkbox" name="opcion">
+        <label for="">Desayuno</label>
+        <input type="checkbox" name="opcion">
+        <Br>
+        <br>
+        <textarea name="areadetexto" id="" cols="30" rows="10" placeholder="Comentarios adicionales"></textarea>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+        <img src="../clase 2/imagen/wsp 1.jpg" width="100" height="100">
+        <footer>
+            <p> Santa Fe, Argentina</p>
+            <p>E-mail: contacto@desayunosmoka.com</p>
+            <p>Tel +54 3424779322</p>
+        </footer>
+</body>
+</html>

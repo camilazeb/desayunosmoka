@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+h2{
+    color: rgb(99, 72, 50);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    text-align: center;}
+
+section{
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+h1{
+    color:rgb(99, 72, 50);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;}
+
+
+
+@media only screen and (max-width: 350px){
+    h2{
+        color:rgb(99, 72, 50);
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;}}
+        
+body{
+    background-color: rgb(236, 224, 209);
+   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'Inter', sans-serif;
+margin-left: 100;}
+
+
+h3{
+    color: rgb(46,80,103);
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: seashell;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    border-style: solid;
+    border-color:rgb(46,80,103) ;
+    border: outset;
+}
+
+h5{
+    color: rgb(46,80,103);
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+/*header {
+    right: 500px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    background-color: rgb(99, 72, 50);
+    float: left;
+
+}*/
+header{
+    background-color: rgb(99, 72, 50);
+   /* float: left;*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    
+}
+
+@media only screen and (max-width: 350px){
+    header{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 15px;
+}}
+
+.menu {
+    line-height: 65px;
+    background-color: rgb(99, 72, 50);
+    }
+
+@media only screen and (max-width: 350px){
+    .menu {
+        line-height: 50px;
+        background-color: rgb(145, 117, 94);
+        }}
+.logo{
+    color: ivory;
+    font-size: 40px;
+}
+@media only screen and (max-width: 350px){
+    .logo{
+        color: ivory;
+        font-size: 20px;
+    }}
+/*nav{
+    float: right;
+}*/
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagen/Waffles\ de\ Almendra\ con\ Mora\ Azul\ _\ Yovana\ Mendoza.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+.menu a:hover{
+    background-color: khaki;
+}
+
+.menu .submenu{
+    display: none;
+}
+
+.menu ul li a:hover + ul, .menu .submenu:hover{
+    display: block;
+}
+
+button{
+    background-color: rgb(46,80,103);
+    color: white;
+    width: 20%;
+    height: 20%;
+    margin-left:  40%;
+}
+footer{
+    line-height: 40px;
+    background-color: rgb(99, 72, 50);
+    color: white;
+    padding: 20px 20px;
+    background-image: linear-gradient(to right, rgb(99, 72, 50),rgb(150, 122, 88));
+}
+.contenedor{
+    display: grid;
+   /* flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;*/
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 900px;
+    grid-template-columns: 400PX 400PX;
+    grid-template-rows: 250PX 250px 250px;
+    justify-items: center;
+    align-items: center;
+   /* grid-gap: 10PX;*/
+    grid-template-areas: "caja1 caja4"
+                        "caja2 caja5"
+                        "caja3 caja6";
+}
+.caja1{
+    height: 250px;
+    width: 400px;
+    background-color: rgb(46,80,103);
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+   /* border-style: solid;
+    border-color:rgb(46,80,103) ;
+    border: outset;*/
+    line-height: 250px;
+    grid-area: "caja1";
+    
+}
+.caja4{
+    height: 250px;
+    width: 400px;
+    background-color: cadetblue;
+    color: rgb(46,80,103);
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    border-style: solid;
+    border-color:rgb(46,80,103) ;
+    border: outset;
+    line-height: 200px;
+    background-image:url(../imagen/Picada.jpeg);
+    grid-area: "caja4";
+    
+}
+.caja2{
+    height: 250px;
+    width: 400px;
+    background-color: rgb(46,80,103);
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    border-style: solid;
+    border-color:rgb(46,80,103) ;
+    border: outset;
+    line-height: 200px;
+    grid-area: "caja2";
+    background-image: url(../imagen/Desayuno.png);
+}
+.caja5{
+    height: 250px;
+    width: 400px;
+    background-color: cadetblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    /*border-style: solid;
+    border-color:rgb(46,80,103) ;
+    border: outset;*/
+    line-height: 250px;
+    grid-area: "caja5";
+}
+.caja3{
+    height: 250px;
+    width: 400px;
+    background-color: rgb(46,80,103);
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    /*border-style: solid;
+    border-color:rgb(46,80,103) ;
+    border: outset;*/
+    line-height: 250px;
+    grid-area: "caja3";
+}
+.caja6{
+    height: 250px;
+    width: 400px;
+   /* background-color: cadetblue;
+    color: rgb(46,80,103);
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    border-style: solid;
+    border-color:rgb(46,80,103) ;
+    border: outset;*/
+    line-height: 200px;
+    grid-area: "caja6";
+    background-image: url(../imagen/Regalo.jpg)
+}
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sorprendé a quien mas queres con un desayuno. Hacemos envios en Santa Fe y alrededores">
+    <meta name="keywords" content="desayuno, picada, regalo, sorpresa, box, amigos, pareja, merienda. SANTA FE, A DOMICILIO, SALUDABLE">
+    <link rel="stylesheet" href="../style/estilo.css">
+    <title>GALERIA DE IMAGENES</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contenedor1{
+            width: 90%;
+            height: auto;
+            display: grid;
+           /* justify-content: center;*/
+            align-content: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .item{
+            min-height: 300px;
+            min-width: 200px;
+            border: 2px solid white;
+        }
+        .item:hover{
+            transform: scale(1.5);
+            transition: 0.7s;
+            filter: sepia(1);
+        }
+        .item1{
+            background-image: url(../imagen/imagenes/img1.jpg);
+            grid-row: 1/3;
+            grid-column: 1/2;
+            background-size: cover;
+            background-position: center;
+        }
+        .item2{
+            background-color: rgb(46,80,103);
+            grid-row: 1/2;
+            grid-column: 2/3;
+            background-size: cover;
+            background-position: center;
+        }
+        .item3{
+            background-image: url(../imagen/imagenes/img11.jpg);
+            grid-row: 1/2;
+            grid-column: 3/4;
+            background-size: cover;
+            background-position: center;
+        }
+        .item4{
+            background-image: url(../imagen/imagenes/img3.jpg);
+            grid-row: 2/3;
+            grid-column: 2/3;
+            background-size: cover;
+            background-position: center;
+        }
+        .item5{
+            background-image: url(../imagen/imagenes/img10.jpg);
+            grid-row: 1/3;
+            grid-column: 4/5;
+            background-size: cover;
+            background-position: center;
+        }
+        .item6{
+            background-color:cadetblue;
+            grid-row: 3/4;
+            grid-column: 1/3;
+            background-size: cover;
+            background-position: center;
+        }
+        .item7{
+            background-image: url(../imagen/imagenes/img2.jpg);
+            grid-row: 2/4;
+            grid-column: 3/4;
+            background-size: cover;
+            background-position: center;
+        }
+        .item8{
+            background-color: rgb(133, 110, 68);
+            grid-row: 3/4;
+            grid-column: 4/5;
+            background-size: cover;
+            background-position: center;
+        }
+        footer{
+    line-height: 40px;
+    background-color: rgb(99, 72, 50);
+    color: white;
+    padding: 20px 20px;
+    background-image: linear-gradient(to right, rgb(99, 72, 50),rgb(150, 122, 88));
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DESAYUNOS MOKA</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./productos.html">PRODUCTOS</a>   
+                    <ul class="submenu">
+                        <li>Desayunos</li>
+                        <li>Picadas</li>
+                    </ul>
+                </li>
+                <li><a href="./galeria.html">GALERIA</a></li>
+                <li><a href="./horarios.html">COMO PEDIR</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+               
+             </ul>
+        </nav>
+    </header>
+    <div class="galeria">
+    <br>
+    <BR>
+    <H2 class="h2">GALERIA DE IMAGENES</H2>
+    <br>
+    <div class="contenedor1">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+    </div>
+    <br>
+        <h2>VIDEOS</h2>
+        <video src="../imagen/imagenes/video1.mp4" controls width="300">
+            <source src="video1.mp4" type="video1/mp4" preload="auto" >
+        </video>
+        <video src="../imagen/imagenes/video2.mp4" controls height="300">
+            <source src="video2.mp4" type="video2/mp4" preload="auto">
+        </video>
+    <br>
+    
+    <a href="../index.html"><button>VOLVER AL INICIO</button></a>
+</div>
+<BR>
+<BR>
+<footer>
+    <p> Santa Fe, Argentina</p>
+    <p>E-mail: contacto@desayunosmoka.com</p>
+    <p>Tel +54 3424779322</p>
+</footer>
+</body>
+</html>
