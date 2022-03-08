@@ -9,8 +9,7 @@
     <meta name="country" content="Argentina">
     <meta name="language" content="Spanish">
     <link rel="stylesheet" href="style/estilo.css">
-        
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>DESAYUNOS Y PICADAS A DOMICILIO EN SANTA FE</title>
     <style>
         .formulario{
@@ -24,14 +23,130 @@
         margin-right: 10%;
         text-align: justify;
         }
+        .logo{
+            align-items: center;
+            padding: 50px;
+            margin-left: 5%;
+        }
+        .color1{
+                background-color: rgb(236, 224, 209);
+                color: dimgrey;
+            }
+            .color2{
+                background-color: rgb(150, 122, 88);
+                color: white;
+            }
+            .color3{
+                background-color: cadetblue;
+                color: white;
+            }
+            .color4{
+                background-color: rgb(99, 72, 50);
+                color: white
+            }
+            .titulo{
+    color: rgb(99, 72, 50);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    text-align: center;
+padding-top: 10px;}
+.titulo2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    text-align: center;
+padding-top: 10px;}
+    .contenedor1{
+            width: 90%;
+            height: auto;
+            display: grid;
+           /* justify-content: center;*/
+            align-content: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .item{
+            min-height: 300px;
+            min-width: 200px;
+            border: 2px solid white;
+        }
+        .item:hover{
+            transform: scale(1.5);
+            transition: 0.7s;
+            filter: sepia(1);
+        }
+        .item1{
+            background-image: url(../imagen/imagenes/img1.jpg);
+            grid-row: 1/3;
+            grid-column: 1/2;
+            background-size: cover;
+            background-position: center;
+        }
+        .item2{
+            background-color: rgb(46,80,103);
+            grid-row: 1/2;
+            grid-column: 2/3;
+            background-size: cover;
+            background-position: center;
+        }
+        .item3{
+            background-image: url(../imagen/imagenes/img11.jpg);
+            grid-row: 1/2;
+            grid-column: 3/4;
+            background-size: cover;
+            background-position: center;
+        }
+        .item4{
+            background-image: url(../imagen/imagenes/img3.jpg);
+            grid-row: 2/3;
+            grid-column: 2/3;
+            background-size: cover;
+            background-position: center;
+        }
+        .item5{
+            background-image: url(../imagen/imagenes/img10.jpg);
+            grid-row: 1/3;
+            grid-column: 4/5;
+            background-size: cover;
+            background-position: center;
+        }
+        .item6{
+            background-color:cadetblue;
+            grid-row: 3/4;
+            grid-column: 1/3;
+            background-size: cover;
+            background-position: center;
+        }
+        .item7{
+            background-image: url(../imagen/imagenes/img2.jpg);
+            grid-row: 2/4;
+            grid-column: 3/4;
+            background-size: cover;
+            background-position: center;
+        }
+        .item8{
+            background-color: rgb(133, 110, 68);
+            grid-row: 3/4;
+            grid-column: 4/5;
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 <body class="fondo">
-    <header>
+    <nav class="navbar navbar-expand-sm color4">
+        <img src="../imagen/imagenes/LOGO.png" alt="Logo" style="width:10%">
+        <a class="navbar-brand color4" href="#nosotros">NOSOTROS</a>
+        <a class="navbar-brand color4" href="#galeria">GALERIA</a>
+        <a class="navbar-brand color4" href="./productos.html">PRODUCTOS</a>   
+        <a class="navbar-brand color4" href="#comopedir">COMO PEDIR</a>
+        <a class="navbar-brand color4" href="#formulario">FORMULARIO</a>
+    </nav>
+    <!--<header>
         <div class="logo">DESAYUNOS MOKA</div>
         <nav class="menu">
             <ul>
-                <li><a href="pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
                 <li><a href="pages/productos.html">PRODUCTOS</a>   
                     <ul class="submenu">
                         <li>Desayunos</li>
@@ -43,21 +158,11 @@
                 <li><a href="pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-    </header>
+    </header>-->
     <main>
     </main>
     <br>
-    <br>
-    <H2 class="h2">CATEGORIAS DE PRODUCTOS</H2>
-    <section class="contenedor">
-        <div class="caja caja1">PICADAS</div>
-        <div class="caja caja4"></div>
-        <div class="caja caja2"></div>
-        <div class="caja caja5">DESAYUNOS</div>
-        <div class="caja caja3">REGALOS</div>
-        <div class="caja caja6"></div>
-    </section>
-    <h2 class="h2"> SOBRE NOSOTROS</h2>
+    <h2 class="titulo" font-size=100px id="nosotros"> SOBRE NOSOTROS</h2>
 <br>
         <P class="nosotros">
             Somos una emprendimiento familiar dedicado al agasajo en todas las ocasiones especiales.
@@ -66,58 +171,190 @@
     <br>Con estilo propio y con un abanico de alternativas creativas y únicas, cuidamos cada detalle para que tu regalo sea único, especial e inolvidable.
     <br>En nuestro sitio web no solo encontraras desayunos, sino también una gran variedad de ideas que pueden acompañar ese obsequio tan especial, pudiendo hacer tu pedido online hasta 24hs antes del evento.
     <br>
+    <img class="logo" src="./imagen/imagenes/pasteleros.jpg" height="400" width="auto">
+    <br>
+    <div class="galeria">
+        <br>
+        <H2 class="titulo" id="galeria">GALERIA DE IMAGENES</H2>
+        <br>
+        <div class="contenedor1">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+            <div class="item item6"></div>
+            <div class="item item7"></div>
+            <div class="item item8"></div>
+        </div>
     <br>
     <br>
-    <h2 class="h2"> COMO PEDIR</h2>
-    <p class="nosotros">
-    Los pedidos se toman con  minimo 24 horas de anticipacion. Trabajamos de Lunes a Domingos de 8 a 19hs. 
+    <H2 class="titulo">CATEGORIAS DE PRODUCTOS</H2>
+    <section class="contenedor">
+        <div class="caja caja1">PICADAS</div>
+        <div class="caja caja4"></div>
+        <div class="caja caja2"></div>
+        <div class="caja caja5">DESAYUNOS</div>
+        <div class="caja caja3">REGALOS</div>
+        <div class="caja caja6"></div>
+    </section>
     <br>
-    El pago se realiza previo a la entrega del producto y se puede realizar por tranferencia bancaria, a través de Mercado Pago con débito y crédito, western union desde el exterior, o en efectivo acercando el dinero. 
-    Podés realizar el pedido completando el formulario o bien comunicandote con nosotros por whatsapp o redes sociales.
-    </p>
-    <br>
-    <H2 class="h2">HACE TU PEDIDO</H2>
-    <br>
-    <!-- FORMULARIOS -->
-    <form class="formulario" action="enviar.php" method="get">
-        <label for="usuario">Nombre</label>
-        <input type="text" name="usuario" placeholder="Nombre">
+    <div class="container-fluid color1" id="comopedir">
+        <br>
+        <h2 class="titulo"> COMO PEDIR</h2>
         <br>
         <br>
-        <label for="password">Apellido</label>
-        <input type="text" placeholder="Apellido">
+        <section class="row color1" >
+            <article class="color1 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="../imagen/opciones.png" alt="imagen" width="30%" class="mx-auto d-block">
+                <br> 
+                <h4 class="text-center">ELEGI LA OPCION</h4>
+                <p class="text-center">Podés elegir el tipo de desayuno que necesites en la sección desayunos. Acordate que podemos realizar ajustes de acuerdo a tus requerimientos.</p>
+            </article>
+            <article class="color1 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="../imagen/Draw free vector icons designed by srip.png" alt="imagen" width="30%" class="mx-auto d-block">
+                <br>
+                <h4 class="text-center">HACE TU PEDIDO</h4>
+                <p class="text-center">Carga tu pedido en el formulario, o bien comunicate con nosotros por Whatsapp o Instagram.
+                    Tendrás que indicarnos los datos de envio, asi como también la forma de pago.
+                </p>
+            </article>
+            <article class="color1 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="../imagen/Calendar free vector icons designed by Freepik.png" alt="imagen" width="30%" class="mx-auto d-block">
+                <br>
+                <h4 class="text-center">COMPLETA EL PAGO</h4>
+                <p class="text-center">Una vez recibido el pedido nos estaremos comunicando para concretar el pago y acordar horario de entrega.</p>
+            </article>
+        </section>
         <br>
         <br>
-        <label for="">Email</label>
-        <input type="email" placeholder="Correo electronico">
         <br>
-        <br>
-        Horario de envio<select name="Horario" id="">
-            <option value="Horario">09:00</option>
-            <option value="Horario">10:00</option>
-        </select>
-        <br>
-        <br>
-        Fecha elegida <input type="date" >
-        <br>
-        Producto elegido:
-        <br>
-        <label for="">Picada</label>
-        <input type="checkbox" name="opcion">
-        <label for="">Desayuno</label>
-        <input type="checkbox" name="opcion">
-        <Br>
-        <br>
-        <textarea name="areadetexto" id="" cols="30" rows="10" placeholder="Comentarios adicionales"></textarea>
-        <br>
-        <input type="submit">
-        <input type="reset">
+    </div>
+    <!-- ICONO WSP -->
+    <div id="whatsapp-icon" style="position:fixed; right:20px; bottom:10px; text-align:center; padding:3px">
+        <a href="https://api.whatsapp.com/send?phone=+54342154779322">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/240px-WhatsApp.svg.png" width="50" height="50"></a>
+    </div>
     </form>
-        <img src="../clase 2/imagen/wsp 1.jpg" width="100" height="100">
-        <footer>
-            <p> Santa Fe, Argentina</p>
-            <p>E-mail: contacto@desayunosmoka.com</p>
-            <p>Tel +54 3424779322</p>
-        </footer>
+     <!-- FORMULARIOS -->
+    <section class="container-fluid" id="formulario">
+        <br>
+        <h4 class="titulo">FORMULARIO DE PEDIDOS</h4>
+        <BR>
+        <div class="row">
+            <div class="color3 col-md-5 offset-md-1">
+                <br>
+                <form action="">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre de quien encarga:</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre de quien encarga" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Telefono de quien encarga:</label>
+                        <input type="number" id="nombre" class="form-control" placeholder="Telefono de quien encarga" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Fecha entrega:</label>
+                        <input type="date" id="nombre" class="form-control" placeholder="Fecha entrega" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Direccion:</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Calle, numero, piso, dpto. indicaciones" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Producto elegido:</label>
+                            <select name="nombre" class="custom-select" class="form-control">
+                                <option selected>Productos disponibles</option>
+                                <option value="clasico">Desayuno Clasico</option>
+                                <option value="salado">Desayuno Salado</option>
+                                <option value="dulce">Desayuno Dulce</option>
+                            </select>
+                    </div>
+            </form>
+            </div>
+            <div class="color3 col-xs-12 col-sm-6 col-md-5">
+                <br>
+                <form action="">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre de quien recibe:</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre de quien recibe" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Telefono de quien recibe:</label>
+                        <input type="number" id="nombre" class="form-control" placeholder="Telefono de quien recibe" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Horario de entrega:</label>
+                        <input type="time" id="nombre" class="form-control" placeholder="Horario" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Ciudad:</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Ciudad, provincia, CP" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Metodo de pago:</label>
+                        <br>
+                        <input type="checkbox" id="nombre" name="nombre">
+                        <label for="Nombre">Tranferencia</label>
+                        <input type="checkbox" id="nombre" name="nombre">
+                        <label for="Nombre">Mercado Pago</label>
+                        <input type="checkbox" id="nombre" name="nombre">
+                        <label for="Nombre">Efectivo</label>
+                    </div>
+                </form>
+            </div>
+            <div class="color3 col-md-10 offset-md-1">
+                <form action="">
+                    <div class="form-group">
+                        <label for="Nombre">Dedicatoria y/o comentarios adicionales:</label>
+                        
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Comentarios"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-block">Enviar</button>
+                    <br>
+                </form>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="titulo2 mb-4">UBICACION</h4>
+                    <p class="mb-0">
+                    Santa Fe, Argentina
+                        <br />
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="titulo2 mb-4">REDES SOCIALES</h4>
+                    <a class="mx-1" href="http://www.instagram.com/desayunosmoka">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg></a>
+                    <a class="mx-1" href="http://facebook.com/desayunosmoka">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="titulo2 mb-4">WHATSAPP</h4>
+                    <p class="mb-0">
+                        <a href="http://wa.me/+543426155767">Comunicate con nosotros</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
