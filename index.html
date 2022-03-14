@@ -16,6 +16,9 @@
             text-align: left;
             margin-left: 40%;
         }
+        .barranav{
+            position: static
+        }
         .nosotros{
             color: black;
         font-size: 15px;
@@ -131,17 +134,30 @@ padding-top: 10px;}
             background-size: cover;
             background-position: center;
         }
+        .mx-1{
+            text-decoration: none;
+        }
+        a:hover{
+            font-weight: bold;
+            color: cadetblue
+        }
+        a{
+            text-decoration: none;
+            color: white
+        }
     </style>
 </head>
 <body class="fondo">
+    <div class="barranav">
     <nav class="navbar navbar-expand-sm color4">
         <img src="../imagen/imagenes/LOGO.png" alt="Logo" style="width:10%">
         <a class="navbar-brand color4" href="#nosotros">NOSOTROS</a>
         <a class="navbar-brand color4" href="#galeria">GALERIA</a>
-        <a class="navbar-brand color4" href="./productos.html">PRODUCTOS</a>   
+        <a class="navbar-brand color4" href="#productos">PRODUCTOS</a>   
         <a class="navbar-brand color4" href="#comopedir">COMO PEDIR</a>
         <a class="navbar-brand color4" href="#formulario">FORMULARIO</a>
     </nav>
+</div>
     <!--<header>
         <div class="logo">DESAYUNOS MOKA</div>
         <nav class="menu">
@@ -163,6 +179,11 @@ padding-top: 10px;}
     </main>
     <br>
     <h2 class="titulo" font-size=100px id="nosotros"> SOBRE NOSOTROS</h2>
+    <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+    </div>
 <br>
         <P class="nosotros">
             Somos una emprendimiento familiar dedicado al agasajo en todas las ocasiones especiales.
@@ -189,12 +210,14 @@ padding-top: 10px;}
         </div>
     <br>
     <br>
-    <H2 class="titulo">CATEGORIAS DE PRODUCTOS</H2>
+    <H2 class="titulo" id="productos">CATEGORIAS DE PRODUCTOS</H2>
     <section class="contenedor">
         <div class="caja caja1">PICADAS</div>
         <div class="caja caja4"></div>
         <div class="caja caja2"></div>
-        <div class="caja caja5">DESAYUNOS</div>
+        <a class="boton"href="./pages/productos.html">
+            <div class="caja caja5">DESAYUNOS</div>
+        </a>
         <div class="caja caja3">REGALOS</div>
         <div class="caja caja6"></div>
     </section>
